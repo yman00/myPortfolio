@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  background-color: rgb(92, 92, 92);
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  width: 99vw;
+  background-color: rgb(104, 104, 104);
+  border-radius: 10px;
+  margin: 0;
+}
+
+.countNum {
+  font-size: 70px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: 0;
+  background-color: cadetblue;
+  color: white;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(240, 248, 255, 0);
+  width: 100vw;
+  padding-left: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  .gradient-text {
+    background: linear-gradient(to right, #e5049e, #4320ac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .menu {
+    display: flex;
+    padding-right: 15rem;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: 2.5rem;
+      li {
+        display: inline;
+        font-size: 20px;
+        a {
+          text-decoration: none;
+          padding: 0.5rem;
+          border-radius: 10px;
+          color: rgb(236, 236, 236);
+          transition: font-size 0.3s ease, backgound-color 0.3s ease-in;
+        }
+        a:hover {
+          font-size: 25px;
+          background: linear-gradient(#e5049e70, #4320ac70);
+        }
+      }
+    }
+  }
+}
+
+.landingPoint {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #121232;
+  /* background-image: url(asset/giphy.gif); */
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    width: 100vw;
+    height: 80vh;
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+      height: 100%;
+      color: rgb(236, 236, 236);
+      h2 {
+        margin: 0;
+      }
+    }
+    .shape {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: rgb(194, 194, 194); */
+      background: linear-gradient(#e5049c, #4220ac);
+      width: 600px;
+      height: 700px;
+      border-radius: 49% 51% 66% 34% / 88% 63% 37% 12%;
+      border: 3px solid white;
+      flex-direction: column;
+      color: rgb(236, 236, 236);
+      transition: border-radius 1s ease-in-out, width 1s ease-in-out;
+    }
+
+    .shape:hover {
+      border-radius: 85% 15% 76% 24% / 37% 75% 25% 63%;
+      width: 800px;
+    }
+  }
+}
+
+.secondPoint {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1c1c44;
+  /* background-image: url(asset/coffee.jpg); */
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+}
+
+.thirdPoint {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #121232;
+  height: 100vh;
+  width: 100%;
+}
+
+.fourthPoint {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: 45vh;
+  width: 100%;
+}
