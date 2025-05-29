@@ -3,7 +3,7 @@ html {
 }
 :root {
   display: grid;
-  height: 100vh;
+  width: 99%;
   justify-content: center;
   background-color: rgb(92, 92, 92);
 }
@@ -11,7 +11,7 @@ html {
 body {
   justify-content: center;
   align-items: center;
-  width: 99vw;
+  width: 100vw;
   background-color: rgb(104, 104, 104);
   border-radius: 10px;
   margin: 0;
@@ -57,7 +57,7 @@ header {
         a {
           text-decoration: none;
           padding: 0.5rem;
-          border-radius: 10px;
+          border-radius: 50zpx;
           color: rgb(236, 236, 236);
           transition: font-size 0.3s ease, backgound-color 0.3s ease-in;
         }
@@ -103,8 +103,8 @@ header {
       align-items: center;
       /* background-color: rgb(194, 194, 194); */
       background: linear-gradient(#e5049c, #4220ac);
-      width: 600px;
-      height: 700px;
+      width: 30vw;
+      height: 70vh;
       border-radius: 49% 51% 66% 34% / 88% 63% 37% 12%;
       border: 3px solid white;
       flex-direction: column;
@@ -114,7 +114,7 @@ header {
 
     .shape:hover {
       border-radius: 85% 15% 76% 24% / 37% 75% 25% 63%;
-      width: 800px;
+      width: 40vw;
     }
   }
 }
@@ -129,6 +129,33 @@ header {
   background-size: cover;
   height: 60vh;
   width: 100%;
+  .boxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .boxes {
+      flex: 1;
+      width: 20vw;
+      height: 40vh;
+      /* background-color: rgb(236, 236, 236); */
+      background-image: url(asset/monkey.png);
+      background-size: cover;
+      background-position: top center;
+      border-radius: 15px;
+      transition: 0.7s all ease;
+
+      &:hover {
+        flex: 1.1;
+      }
+    }
+  }
+
+  .boxContainer:hover > .boxes:not(:hover) {
+    filter: blur(5px);
+    opacity: 0.5;
+  }
 }
 
 .thirdPoint {
