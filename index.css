@@ -57,7 +57,7 @@ header {
         a {
           text-decoration: none;
           padding: 0.5rem;
-          border-radius: 50zpx;
+          border-radius: 50px;
           color: rgb(236, 236, 236);
           transition: font-size 0.3s ease, backgound-color 0.3s ease-in;
         }
@@ -97,6 +97,7 @@ header {
         margin: 0;
       }
     }
+    
     .shape {
       display: flex;
       justify-content: center;
@@ -124,11 +125,23 @@ header {
   justify-content: space-evenly;
   align-items: center;
   background-color: #1c1c44;
+  height: 100vh;
+  width: 100%;
+}
+
+.thirdPoint {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #121232;
   /* background-image: url(asset/coffee.jpg); */
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
+  padding-block: 2rem;
+  
   .boxContainer {
     display: flex;
     justify-content: center;
@@ -137,10 +150,10 @@ header {
 
     .boxes {
       flex: 1;
-      width: 20vw;
-      height: 40vh;
+      width: 40vw;
+      height: 50vh;
       /* background-color: rgb(236, 236, 236); */
-      background-image: url(asset/monkey.png);
+      background-image: url(asset/Screenshot\ 2025-05-29\ 204915.png);
       background-size: cover;
       background-position: top center;
       border-radius: 15px;
@@ -158,20 +171,16 @@ header {
   }
 }
 
-.thirdPoint {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #121232;
-  height: 100vh;
-  width: 100%;
-}
 
 .fourthPoint {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: rgb(0, 0, 0);
-  height: 45vh;
+  height: 60vh;
   width: 100%;
+}
+
+h1{
+  color: rgb(236, 236, 236);
 }
